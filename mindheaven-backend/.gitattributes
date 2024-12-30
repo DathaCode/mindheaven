@@ -1,0 +1,10 @@
+# Ensure all text files use LF (Unix) line endings
+* text=auto
+
+# Enforce LF for specific types of files
+*.sh text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+
+# Enforce CRLF for Windows-specific files
+*.bat text eol=crlf

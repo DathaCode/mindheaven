@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.cursive-font {
+  font-family: 'Great Vibes', cursive;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Additional CSS */
+@keyframes lightning {
+  0%, 100% { color: #4A90E2; } /* Light blue */
+  20% { color: #50E3C2; }     /* Aqua */
+  40% { color: #B8E986; }     /* Light green */
+  60% { color: #F5A623; }     /* Orange */
+  80% { color: #D0021B; }     /* Red */
+}
+
+.lightning-text span {
+  animation: lightning 2s infinite;
+}
+
+/* Button Hover Effect */
+button {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #4A90E2; /* Light blue highlight */
+  color: #fff;
+  box-shadow: 0 0 10px #4A90E2, 0 0 20px #4A90E2, 0 0 30px #4A90E2; /* Sparkling effect */
+}
+
+/* Blog Page Styles */
+.blog-page {
+    background-color: #efbfe1;
+    padding: 20px;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.article {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.333% - 40px);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.article:hover {
+  transform: translateY(-5px);
+}
+
+.article-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.article-detail-page {
+  padding: 20px;
+}
+
+.article-detail {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.article-detail-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.article h2 {
+  color: #333;
+}
+
+.article p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.chat-page {
+    background-color: #efbfe1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 90px;
+    background-color: #4A90E2;
+    color: white;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand a {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a, .nav-button {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button {
+    background-color: #357ABD;
+}
+
+.navbar-links a:hover, .nav-button:hover {
+    background-color: white;
+    color: #4A90E2;
+    border: 2px solid #4A90E2;
+}
+
+.hero-section {
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #357abd;
+    box-shadow: 0 0 10px #357abd, 0 0 20px #357abd, 0 0 30px #357abd;
+}
+
+.chat-container {
+    padding: 20px;
+}
+
+.chat-history {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.chat-message {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+}
+
+.chat-message.user {
+    align-self: flex-end;
+    background-color: #4A90E2;
+    color: white;
+}
+
+.chat-message.assistant {
+    align-self: flex-start;
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.chat-input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chat-input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+.chat-submit-button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4A90E2;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-submit-button:hover {
+    background-color: #357ABD;
+}
+
+.therapy-records-button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4A90E2;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.therapy-records-button:hover {
+    background-color: #357ABD;
+}

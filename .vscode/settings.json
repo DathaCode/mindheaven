@@ -1,0 +1,5 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "liveServer.settings.multiRootWorkspaceName": "MindHeaven",
+    "java.configuration.updateBuildConfiguration": "interactive"
+}

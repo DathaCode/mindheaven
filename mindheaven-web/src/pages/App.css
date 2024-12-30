@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body {
+    background-color: #efbfe1;
+    margin: 0; /* Optional: Remove default margin */
+    padding: 0; /* Optional: Remove default padding */
+    font-family: 'Montserrat', sans-serif; /* Apply font style */
+}
+
+.home-page {
+    background-color: #efbfe1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 10px 90px;
+    background-color: #efbfe1;
+    color: white;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif; /* Apply font style */
+}
+
+.navbar-brand a {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.navbar-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: black; /* Changed font color to black */
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 50px; /* Changed to oval shape */
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 50px; /* Changed to oval shape */
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links a:hover, .nav-button:hover {
+    background-color: white;
+    color: #4a90e2;
+    border: 2px solid #4a90e2;
+}
+
+.hero-section {
+    margin-top: 0; /* Ensure no space between navigation bar and hero section */
+    padding-top: 0; /* Ensure no padding at the top */
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #357abd;
+    box-shadow: 0 0 10px #357abd, 0 0 20px #357abd, 0 0 30px #357abd;
+}
+
+.form-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.textarea-field {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #4a90e2;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #357abd;
+    box-shadow: 0 0 10px #357abd, 0 0 20px #357abd, 0 0 30px #357abd;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.article h2 {
+    color: #333;
+}
+
+.article p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.additional-section {
+    margin-top: 50px;
+}
+
+.hero-section p {
+    font-family: 'Montserrat', sans-serif; /* Apply font style */
+}
+
+.chat-container {
+    margin-top: 20px;
+}
+
+.chat-messages {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.user-message {
+    text-align: right;
+    color: blue;
+}
+
+.assistant-message {
+    text-align: left;
+    color: green;
+}
