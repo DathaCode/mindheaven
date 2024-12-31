@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 public class MindheavenBackendApplication {
     public static void main(String[] args) {
         Dotenv dotenv = Dotenv.configure()
-                              .directory("C:\\MINDAPP\\MindHeaven")
+                              .directory("C:/MINDAPP/MindHeaven/mindheaven-backend")
                               .load(); // Load environment variables
 
         System.setProperty("DB_USERNAME", dotenv.get("DB_USERNAME"));

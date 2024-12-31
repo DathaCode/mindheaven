@@ -14,7 +14,7 @@ public class FirebaseConfig {
 
     @Bean
     public FirebaseApp initializeFirebase() throws IOException {
-        FileInputStream serviceAccount = new FileInputStream("C:\\MINDAPP\\MindHeaven\\mindheaven-backend\\src\\main\\resources\\firebase-service-account.json");
+        FileInputStream serviceAccount = new FileInputStream("C:/MINDAPP/MindHeaven/mindheaven-backend/src/main/resources/firebase-service-account.json");
 
         FirebaseOptions options = FirebaseOptions.builder()
             .setCredentials(GoogleCredentials.fromStream(serviceAccount))
