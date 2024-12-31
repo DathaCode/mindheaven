@@ -1,0 +1,7 @@
+# filepath: /mindheaven-web/render.yaml
+services:
+  - type: web
+    name: mindheaven-web
+    env: static
+    staticPublishPath: build
+    buildCommand: npm install && npm run build
