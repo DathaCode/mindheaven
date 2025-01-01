@@ -34,16 +34,17 @@ public class OpenAIService {
         Map<String, Object> requestBody = new HashMap<>();
         requestBody.put("model", "gpt-3.5-turbo");
         requestBody.put("messages", List.of(
-            Map.of("role", "system", "content", "You are a helpful assistant."),
-            Map.of("role", "user", "content", "Analyze the user's mood based on the following text. Provide supportive advice, solutions for improving mental health, and possible recommendations for professional help. The input text is: " + userInput)
+            Map.of("role", "system", "content", "You are a helpful and Mental Health advisor."),
+            Map.of("role", "user", "content", "You are an empathetic and professional mental health counselor. Always respond in a concise and emotionally supportive way, tailored to the user's input. Avoid generic advice unless the user asks for general tips.The input text is: " + userInput)
         ));
         requestBody.put("max_tokens", 300); // Increase token count for longer responses
-        requestBody.put("temperature", 0.7); // Make the responses more human-like
+        requestBody.put("temperature", 0.5); // Make the responses more human-like
 
         HttpEntity<Map<String, Object>> request = new HttpEntity<>(requestBody, headers);
 
-        // Debug statement to print the URL
+        // Debug statements
         System.out.println("Request URL: " + openAiApiUrl + "/v1/chat/completions");
+        System.out.println("Request Body: " + requestBody);
 
         ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
             openAiApiUrl + "/v1/chat/completions",

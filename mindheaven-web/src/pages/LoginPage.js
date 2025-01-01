@@ -44,7 +44,7 @@ const LoginPage = () => {
     return (
         <div className="auth-page">
             <div className="form-container">
-                <h1>Login</h1>
+                <h1>Login to your Account</h1>
                 <form onSubmit={handleSubmit}>
                     <input
                         type="email"
