@@ -63,13 +63,12 @@ const HomePage = () => {
           color: "#000000",
         }}
       >
-        <h1 style={{ fontSize: "2.5rem", color: "#4A90E2", marginBottom: "100px" }}>Welcome to</h1>
         <p style={{ fontSize: "1.5rem", marginTop: "200px", color: "#000000" }}>
           ~Your journey to emotional well-being starts here~
         </p>
         {/* Call-to-Action Button */}
         <Link to="/chat-with-ai-counselor">
-          <button className="cta-button"
+          <button className="cta-buttosn"
             style={{
               backgroundColor: "transparent",
               color: "#000000",

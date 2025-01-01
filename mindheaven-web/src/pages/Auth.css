@@ -4,13 +4,13 @@
     align-items: center;
     height: 100vh;
     background-color: #f0f2f5;
-    background-image: url('C:/MINDAPP/MindHeaven/mindheaven-web/public/MindHeaven.jpg'); /* Add this line */
-    background-size: cover; /* Ensure the image covers the entire background */
-    background-position: center; /* Center the background image */
+    background-image: url('C:/MINDAPP/MindHeaven/mindheaven-web/public/MindHeaven.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .form-container {
-    background: rgba(255, 255, 255, 0.4); /* Add this line for a slight fade effect */
+    background: rgba(255, 255, 255, 0.4);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -46,4 +46,22 @@
 .error-message {
     color: red;
     margin-top: 1rem;
+}
+
+.therapy-records-page {
+    background-image: url('C:\MINDAPP\MindHeaven\mindheaven-web\public\blog.jpg'); /* Ensure the image is in the public directory */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-detail-page {
+    background-image: url('C:\MINDAPP\MindHeaven\mindheaven-web\public\blog.jpg'); /* Ensure the image is in the public directory */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }

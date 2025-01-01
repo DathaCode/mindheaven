@@ -3,6 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 import './App.css';
+import './Auth.css';
 
 // Initialize Firebase
 const auth = getAuth();
